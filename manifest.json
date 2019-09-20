@@ -1,0 +1,22 @@
+{
+	"name": "English Reminder",
+	"version": "1.0",
+	"manifest_version": 2,
+	"icons": {
+		"128": "icons/icon-128.png",
+		"19": "icons/icon-39.png",
+		"38": "icons/icon-19.png"
+	},
+	"browser_action": {
+		"default_title": "That's the english reminder extensions",
+		"default_popup": "popup.html"
+	},
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": true
+	},
+	"permissions": ["storage", "alarms", "notifications"],
+	"web_accessible_resources": [
+		"data/words.json"
+	]
+}
