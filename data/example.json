@@ -1,0 +1,16 @@
+{
+  "words" : [
+    {
+      "word" : "abandon",
+      "pronunciation" : "ə’bændən",
+      "mean" : "bỏ, từ bỏ",
+      "category" : "v"
+    },
+    {
+      "word" : "abandoned",
+      "pronunciation" : "ə’bændənd",
+      "mean" : "bị bỏ rơi, bị ruồng bỏ",
+      "category" : "adj"
+    }
+  ]
+}

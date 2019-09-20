@@ -1,0 +1,12 @@
+{
+	"categories":[
+		{
+			"name": "All words",
+			"value": "words"
+		},
+		{
+			"name": "Example",
+			"value": "example"
+		}
+	]
+}

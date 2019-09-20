@@ -23,7 +23,13 @@ function getRndInteger(min, max) {
 }
 
 function getWords() {
-	const url = chrome.runtime.getURL('data/words.json');
+	var selectedCategory = window.localStorage.getItem('selectedOption');
+	if (selectedCategory == null) {
+		selectedCategory = "words";
+	};
+	
+	var urlString = 'data/'+selectedCategory+".json";
+	const url = chrome.runtime.getURL(urlString);
 	fetch(url).then((response) => response.json()).then((json) => processJson(json));
 }
 

@@ -17,6 +17,10 @@
 	},
 	"permissions": ["storage", "alarms", "notifications"],
 	"web_accessible_resources": [
-		"data/words.json"
-	]
+		"data/*.json"
+	],
+	"content_scripts": [{
+		"matches": ["http://*/*"],
+		"js": ["js/script.js","js/bootstrap.bundle.min.js", "js/bootstrap.min.js"]
+	}]
 }
